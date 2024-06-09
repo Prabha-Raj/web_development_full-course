@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        h1{
+            color:blueviolet;
+            border: 2px solid blue;
+        }
+        div{
+            border: 2px solid red;
+        }
+        /* Id selector */
+        #firstPara{
+            color:red;
+        }
+        #scondPara{
+            color:blue;
+        }
+        /* Class selector */
+        .prabha{
+            color:green;
+            background-color: yellow;
+        }
+        /* Grooping selector */
+        footer,span{
+            color:aqua;
+        }
+        p,span,footer{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p id="firstPara">This is First Pragraph.</p>
+    <p id="scondPara" class="prabha">This is Second Paragraph</p>
+    <span>this is spsn </span>
+    <br>
+    <br>
+    <div class="prabha">
+        <p>This is yet another simple paragraph inside div to demonstrate CSS selectors</p>
+        <span>This is another span </span>
+        <br>
+        <br>
+    </div>
+    <br>
+    <footer >This is Footer</footer>
+</body>
+</html>

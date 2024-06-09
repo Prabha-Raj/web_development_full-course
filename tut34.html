@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadoe</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* box-shadow: ofset-x ofset-y color; */
+            /* box-shadow: ofset-x ofset-y blur-radius color ; */
+            /* box-shadow: ofset-x ofset-y blur-radius spread-radius color ; */
+
+
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green; */
+            /* box-shadow: 7px 2px 10px 12px rgba(14, 229, 229, 0.9); */
+            /* box-shadow: inset 3px 4px green; */
+            box-shadow: inset 3px 4px green,3px 4px red;
+        }
+        .card h2{
+            /* text-shadow: 0.5px 5px blueviolet; */
+            /* text-shadow: -0.5px -5px  blueviolet; */
+            /* text-shadow: 0.5px 5px 3px blueviolet; */
+            text-shadow: -0.5px -5px 3px blueviolet;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card" id="card-1">
+        <h2>Thise is C,C++,C# Course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci aliquam suscipit aspernatur architecto dignissimos nam quidem. Debitis corporis recusandae quis quae consectetur laborum. Odit sed ab aut deleniti, debitis temporibus facilis eveniet ex?</p>           
+    </div>
+    <div class="card" id="card-2">
+      <h2>This is HTML,CSS,JavaSript Course</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad in laboriosam amet earum, maiores facere, perspiciatis temporibus natus deserunt molestiae, excepturi blanditiis dolore debitis! Quia modi expedita beatae. Perspiciatis possimus itaque harum odit voluptatibus.</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>This is Python Course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima repudiandae laudantium fuga assumenda enim ad, mollitia quod, libero eos quisquam facere laborum ipsa, nihil totam explicabo quia! Illo nobis alias quasi delectus dolorum.</p>
+    </div>
+</div>
+</body>
+</html>

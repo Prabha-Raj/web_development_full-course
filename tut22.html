@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(201, 251, 151);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            border: 2px;
+
+        }
+        .btn1:hover{
+            color: rgb(238, 11, 219);
+            background-color: black;
+            border:2.5px solid blue;
+            
+        }
+        .btn1:visited{
+            background-color:yellow;
+            border: 4px blue;
+        }
+        .btn1{
+            background-color: rgb(64, 64, 226);
+            padding: 6px;
+            margin: 6px;
+            border-radius: 12px;
+            border-color:  black;
+            cursor: pointer;
+            border-style:hidden;
+        }
+        .btn2{
+            background-color: rgb(64, 64, 226);
+            padding: 6px;
+            margin: 6px;
+            border-radius: 9px;
+            border-color:  black;
+            cursor: pointer;
+            border-style:hidden;
+            
+        }
+        .btn2:hover{
+
+            color: white;
+            background-color: green;
+            border: 2.5px solid blue;
+        }
+        .btn2:visited{
+            background-color: yellow;
+            border:3px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum sit facilis, ut at quo quam culpa molestias, libero deserunt fugiat? Eaque, expedita vitae ratione quidem omnis dolorum earum fugit?
+        </p>
+        <a href="https://google.com" class="btn1">Read more</a>
+        <button class="btn2">more Content</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar ' 
+            'section section section aside' 
+            'footer footer footer footer' ;
+
+        }
+        .item{
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home   About   Contact us
+        </div>
+        <div id="section" class="item" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nesciunt eum, voluptates ad amet inventore enim praesentium hic quo, delectus recusandae iure autem exercitationem ipsum animi quia iusto, nostrum non sint perferendis quas necessitatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, atque sunt? Numquam porro veritatis blanditiis quod at, corrupti enim repellendus, a eos sint, facere expedita. Quia dignissimos fugit provident odit praesentium illum dolore ut non porro, nisi hic eaque nostrum reprehenderit commodi odio asperiores velit voluptatibus dolorum tenetur laudantium perspiciatis blanditiis pariatur facilis suscipit! Deleniti eum eos nemo quae, alias distinctio at cum? Iusto ex error vitae? Pariatur ea consequatur sint exercitationem alias voluptates veritatis ullam fugit rerum. Saepe, obcaecati ad earum deleniti repellat excepturi amet quidem numquam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cumque ducimus ipsam fugit est aperiam facilis iusto dolorem, autem assumenda eum molestias doloribus unde voluptatum temporibus quam consectetur culpa magni dolor dolorum at repellendus quaerat itaque! Veniam, voluptate impedit? Voluptates, ut? Eos aliquid maxime perspiciatis ratione sit voluptates magni qui facere praesentium odio commodi at alias, animi illo voluptatum ipsam rerum doloremque itaque facilis deleniti quibusdam, maiores deserunt excepturi. Minus quas, eius quos molestiae aliquam libero unde corrupti adipisci, earum expedita odit eligendi facere quisquam esse facilis nihil enim excepturi doloribus accusantium exercitationem atque magni eveniet. Eligendi quasi provident natus cum quam qui ipsum aspernatur deleniti culpa quod ab, dicta nostrum dolore. Doloremque, eaque? Itaque, totam. Repellat sapiente ducimus eos nobis vero suscipit magnam nisi adipisci, dolorum expedita placeat magni illo necessitatibus officia culpa, eum quis facere aperiam obcaecati? Doloremque, assumenda voluptates et quia doloribus cum officiis minima. Repellat nisi perferendis eius eaque vel dolores, reiciendis consequatur ratione doloremque distinctio voluptate provident alias, sunt debitis totam id fugit architecto labore natus, tempore recusandae. Provident obcaecati placeat nostrum ex pariatur libero. Deleniti a incidunt distinctio aliquid, nulla, esse veniam exercitationem, et harum corrupti obcaecati placeat nam consectetur fugit iste alias. Alias aspernatur itaque placeat, debitis, nulla possimus maiores repellendus similique ad quae tempore dolorem inventore provident molestiae sequi cupiditate. Nam perferendis, exercitationem architecto iusto harum, inventore, a necessitatibus deleniti odio quia voluptate illo! Exercitationem incidunt tempora quibusdam, ad nostrum officia totam, eveniet eaque sint omnis quisquam cumque, natus minus! Ea hic vero, obcaecati aperiam dolorem nemo ipsum, doloribus laudantium possimus sint omnis. Dignissimos nulla voluptatibus iure blanditiis veniam eligendi possimus magni? Ipsam, tenetur quae. Perferendis, officiis maxime. Nobis a quos excepturi incidunt fugiat doloremque dolore? Commodi, sint? Ad at saepe necessitatibus qui error, sequi, officiis aliquid beatae voluptates corporis animi doloribus.
+        </div>
+        <div id="aside"  class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae exercitationem vel aliquam repellendus possimus. Enim?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus repudiandae at, asperiores nostrum ullam tenetur quod ipsum pariatur veritatis minima est perferendis quae, praesentium suscipit itaque, delectus deserunt accusamus cum esse corporis ea voluptate corrupti porro eius? Dolore tenetur rerum, iure expedita veritatis neque dignissimos molestias ipsa non minima, quidem earum aspernatur adipisci veniam voluptate? Fugit cupiditate consectetur qui et! Ea culpa sunt voluptate nobis iste maxime sapiente quisquam provident cum sint corrupti, hic, voluptatibus molestiae laborum in minima minus ut autem repellendus, dicta nemo nihil et temporibus? Blanditiis harum voluptate qui dolorem consectetur, repellendus fugiat doloremque quos corporis corrupti ipsa. Reprehenderit cumque, assumenda totam doloremque, distinctio quibusdam temporibus eveniet at repellat soluta, iste blanditiis? Ea reiciendis perferendis aperiam ratione maiores natus provident nulla impedit nisi rerum ipsum magnam, nam consequatur. At deserunt quo fuga aspernatur, molestiae facilis porro aliquam nostrum necessitatibus quia quibusdam voluptate, ratione ex maiores? Odio repellendus blanditiis esse sunt, adipisci dicta error dolore voluptatum ratione deserunt magnam praesentium? Delectus accusantium hic voluptatum, dolores vero repudiandae, obcaecati itaque, nihil quasi illum placeat libero fugit odio officiis eaque similique. Voluptate, accusantium ratione repellat consequatur cum animi totam amet molestias rem reiciendis fuga et suscipit, quis tempora porro deleniti?
+
+        </div>
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+    </div>
+    <footer class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem sunt dolorem eos animi nemo ipsam veniam ipsa corporis ratione sed consectetur minus consequatur, fugiat quos praesentium dolores ad illo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam perspiciatis sed suscipit, dolore laborum. Vero, qui quod. Saepe, deleniti! Dicta accusantium recusandae, eos expedita laudantium pariatur necessitatibus! Nisi voluptatem quis neque ex doloremque quibusdam modi quia nostrum delectus autem provident id possimus, nemo ipsa? Consequatur unde tempora deleniti ab.
+    </footer>
+</body>
+</html>
