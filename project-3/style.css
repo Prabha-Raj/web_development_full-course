@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2&family=Bree+Serif&family=Exo+2&family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #222048;
+}
+
+.text{
+    width: 100%;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    /* font-family: 'Bree Serif', serif; */
+    /* font-family: 'Exo 2', sans-serif; */
+    font-family: 'Pacifico', cursive;
+    font-size: 75px;
+    font-weight: 700;
+    color: #f48fb1;
+    text-align: center;
+    top: 50%;
+    opacity: 1;
+    margin-bottom: 150px;
+    animation: glow 1s linear infinite;
+
+}
+
+@keyframes glow{
+    50%{
+        text-shadow: 0 0 0.5vw #8f2626, 0 0 2vw #ff0000, 0 0 3vw #ff3366,
+            0 0 3vw #fff, 0 0 5vw #fed641, 0 0 3vw #fed641, 0 0 2vw #ff69b4,
+            0 0 0.5vw #ff69b4;
+        color: #ff6334;
+    }
+    0%,100%{
+        text-shadow: 0 0 0.5vw #e01c1c, 0 0 1vw #e01c1c, 0 0 2vw #ff3366,
+            0 0 3vw #ff3366, 0 0 5vw #ff3366, 0 0 2vw #ff3366, 0 0 1vw #ff3366,
+            0 0 0.5vw #8f2626;
+        color: #ff3366;
+        -webkit-text-stroke: 0.1px #ff69b4;
+    }
+}
+
+.year{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 200px 100px 0px 0px;
+
+}
+
+.year>span{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Exo 2', sans-serif; */
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 175px;
+    font-weight: 700;
+    color: #7a8fe8;
+}
+
+.one{
+    position: absolute;
+    right: 52%;
+    top: 50%;
+    margin-right: -200px;
+    animation: two_2021 5s ease-in-out 5s forwards;
+}
+
+.two{
+    position: absolute;
+    right: 0%;
+    top: 47%;
+    margin-right: -223px;
+    animation: three_2022 6s ease-in-out forwards;
+}
+
+.two::before{
+    content: '';
+    width: 0px;
+    height: 6px;
+    display: block;
+    border-radius: 3px;
+    background: #7a8fe8;
+    transform: rotate(0deg);
+    transform-origin: left top;
+    position: absolute;
+    top: 47px;
+    left: 47px;
+    z-index: -1;
+    animation: en-bal 1s ease-in-out 4s;
+}
+
+.bal{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: #e8d57a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -165px;
+    right: 0%;
+    margin-right: -200px;
+    animation: bal 10s ease-in-out forwards;
+
+}
+
+.bal::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #b19b32 transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -10px;
+    z-index: -1;
+
+}
+
+.bal::after{
+    content: '';
+    width: 4px;
+    height: 100px;
+    display: block;
+    background: #fff;
+    border-radius: 0px 0px 3px 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: -110px;
+
+}
+
+@keyframes two_2022{
+    0%{
+        right: 0%;
+    }
+    66%{
+        right: 50%;
+        margin-right: -300px;
+    }
+    90%{
+        right: 50%;
+        margin-right: -300px;
+    }
+    100%{
+        right: 50%;
+    }
+}
+
+@keyframes bal{
+    0%{
+        right: 0%;
+    }
+    40%{
+        right: 50%;
+        margin-right: -300px;
+    }
+    50%{
+        right: 50%;
+        margin-right: -200px;
+        top: 50%;
+    }
+    100%{
+        top: -100%;
+        right: 50%;
+    }
+}
+
+@keyframes en-bal{
+    0%{
+        transform: rotate(-30deg);
+        width: 40px;
+    }
+    100%{
+        transform: rotate(-150deg);
+        width: 70px;
+    }
+}
+
+@keyframes one_2021{
+    0%{
+        top: 50%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+.greeting_card{
+    width: 200vh;
+    height: 100vh;
+    /* background: #222048; */
+    color: white;
+    position: relative;
+}
